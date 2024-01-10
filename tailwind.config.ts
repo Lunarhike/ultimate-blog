@@ -20,13 +20,6 @@ const config: Config = {
       },
     },
     extend: {
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            maxWidth: "650px",
-          },
-        },
-      }),
       fontFamily: {
         body: ["var(--font-body)"],
         code: ["var(--font-code)"],
@@ -91,7 +84,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [typography, require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate")],
   future: {
     hoverOnlyWhenSupported: true,
   },
