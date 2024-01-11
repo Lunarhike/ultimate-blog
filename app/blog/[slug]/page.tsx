@@ -56,7 +56,7 @@ export default async function PostPage({ params }) {
           Published on {formatDate(data.publishedAt)}
         </time>
       )}
-      <h1 className="mt-2 font-heading font-bold inline-block text-4xl leading-tight tracking-tight lg:text-5xl ">
+      <h1 className="mt-2 font-heading font-semibold inline-block text-4xl leading-tighter tracking-tight lg:text-5xl ">
         {data.title}
       </h1>
       <div className="mt-4 flex space-x-4">

@@ -8,7 +8,7 @@ const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       className={cn(
-        "font-heading text-card-foreground mt-2 scroll-m-20 text-4xl font-bold",
+        "font-heading text-card-foreground mt-12 scroll-m-20 pb-2 text-4xl font-medium tracking-tight first:mt-0",
         className
       )}
       {...props}
@@ -17,7 +17,7 @@ const components = {
   h2: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h2
       className={cn(
-        "font-heading text-card-foreground mt-12 scroll-m-20 pb-2 text-2xl font-medium tracking-tight first:mt-0",
+        "font-heading text-card-foreground mt-12 pb-2 scroll-m-20 text-3xl font-medium tracking-tight",
         className
       )}
       {...props}
@@ -26,7 +26,7 @@ const components = {
   h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       className={cn(
-        "font-heading text-card-foreground mt-8 scroll-m-20 text-xl font-semibold tracking-tight",
+        "font-heading text-card-foreground mt-12 scroll-m-20 pb-2 text-2xl font-medium tracking-tight",
         className
       )}
       {...props}
@@ -35,7 +35,7 @@ const components = {
   h4: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h4
       className={cn(
-        "font-heading text-card-foreground mt-8 scroll-m-20 text-lg font-semibold tracking-tight",
+        "font-heading text-card-foreground mt-12 scroll-m-20 text-xl pb-2 font-medium tracking-tight",
         className
       )}
       {...props}
@@ -61,13 +61,16 @@ const components = {
   ),
   a: ({ className, ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
     <a
-      className={cn("font-medium underline underline-offset-4", className)}
+      className={cn(
+        "font-medium underline underline-offset-4 decoration-accent",
+        className
+      )}
       {...props}
     />
   ),
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
     <p
-      className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}
+      className={cn("leading-7 [&:not(:first-child)]:mt-3", className)}
       {...props}
     />
   ),
@@ -147,7 +150,7 @@ const components = {
   pre: ({ className, ...props }) => (
     <pre
       className={cn(
-        "[&>code]:!bg-card [&>code]:!font-normal [&>code:before]:content-none [&>code:after]:content-none overflow-x-auto max-h-[650px] mb-8 mt-6 pl-4 py-4 border border-zinc-800 !bg-card [&>code]:!text-xs sm:[&>code]:!text-sm font-normal rounded",
+        "[&>code]:!bg-card [&>code]:!font-normal [&>code:before]:content-none [&>code:after]:content-none overflow-x-auto max-h-[650px] mb-12 mt-8 pl-4 py-4 border border-zinc-800 !bg-card [&>code]:!text-xs sm:[&>code]:!text-sm font-normal rounded",
         className
       )}
       {...props}
